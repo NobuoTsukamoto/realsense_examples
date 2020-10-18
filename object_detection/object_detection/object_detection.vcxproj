@@ -116,12 +116,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\third_party\libedgetpu\tflite\public;$(SolutionDir)..\third_party\tensorflow\bazel-tensorflow\external\flatbuffers\include;$(SolutionDir)..\third_party\tensorflow\bazel-tensorflow\external\com_google_absl;$(SolutionDir)..\third_party\tensorflow;C:\Program Files\OpenCV\include;C:\Program Files %28x86%29\Intel RealSense SDK 2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Program Files\OpenCV\x64\vc16\lib;$(SolutionDir)..\third_party\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libtensorflowlite.so.if.lib;opencv_core440d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Intel RealSense SDK 2.0\lib\x64;C:\Program Files\OpenCV\x64\vc16\lib;$(SolutionDir)..\third_party\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core440d.lib;opencv_highgui440d.lib;opencv_imgproc440d.lib;libtensorflowlite.so.if.lib;edgetpu.dll.if.lib;realsense2.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -132,7 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\third_party\tensorflow\bazel-tensorflow\external\flatbuffers\include;$(SolutionDir)..\third_party\tensorflow\bazel-tensorflow\external\com_google_absl;$(SolutionDir)..\third_party\tensorflow;C:\Program Files\OpenCV\include;C:\Program Files %28x86%29\Intel RealSense SDK 2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\third_party\libedgetpu\tflite\public;$(SolutionDir)..\third_party\tensorflow\bazel-tensorflow\external\flatbuffers\include;$(SolutionDir)..\third_party\tensorflow\bazel-tensorflow\external\com_google_absl;$(SolutionDir)..\third_party\tensorflow;C:\Program Files\OpenCV\include;C:\Program Files %28x86%29\Intel RealSense SDK 2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,7 +141,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Intel RealSense SDK 2.0\lib\x64;C:\Program Files\OpenCV\x64\vc16\lib;$(SolutionDir)..\third_party\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_core440.lib;opencv_highgui440.lib;opencv_imgproc440.lib;libtensorflowlite.so.if.lib;realsense2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_core440.lib;opencv_highgui440.lib;opencv_imgproc440.lib;libtensorflowlite.so.if.lib;edgetpu.dll.if.lib;realsense2.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

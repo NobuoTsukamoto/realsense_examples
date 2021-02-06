@@ -158,7 +158,7 @@ Connect RealSense (L515) and launch realsense-viewer.
 ```
 $ realsense-viewer
 ```
-
+![Launch RealSense-Viewer](img/RealSense_Viewer.jpeg)
 - [x] RealSense device is displayed
 - [x] The Motion Module is valid.  
       When turned on, Accel stream and Gyro stream are displayed.

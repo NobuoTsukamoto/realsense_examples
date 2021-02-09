@@ -164,3 +164,11 @@ $ realsense-viewer
       When turned on, Accel stream and Gyro stream are displayed.
 - [x] Depth Sensor is enabled.  
       When turned on, the Depth stream should be displayed.
+
+## Add PYTHONPATH
+Open up your .bashrc file and append he following lines to the bottom of the file:
+```
+# Open up ~/.bashrc
+
+export PYTHONPATH=$PYTHONPATH:/usr/lib/python3/dist-packages/pyrealsense2/
+```

@@ -168,7 +168,5 @@ $ realsense-viewer
 ## Add PYTHONPATH
 Open up your .bashrc file and append he following lines to the bottom of the file:
 ```
-# Open up ~/.bashrc
-
 export PYTHONPATH=$PYTHONPATH:/usr/lib/python3/dist-packages/pyrealsense2/
 ```

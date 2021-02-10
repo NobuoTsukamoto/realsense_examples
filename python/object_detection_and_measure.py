@@ -52,18 +52,6 @@ def draw_caption(image, box, caption):
     )
 
 
-def random_colors(N):
-    """ Random color generator.
-    """
-    N = N + 1
-    hsv = [(i / N, 1.0, 1.0) for i in range(N)]
-    colors = list(
-        map(lambda c: tuple(int(i * 255) for i in colorsys.hsv_to_rgb(*c)), hsv)
-    )
-    random.shuffle(colors)
-    return colors
-
-
 def set_input_tensor(interpreter, image):
     """ Sets the input tensor.
     Args:
